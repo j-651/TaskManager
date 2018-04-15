@@ -1,3 +1,4 @@
+![TaskManager Logo](https://user-images.githubusercontent.com/35548468/38784185-59058e20-40dc-11e8-83db-d2e91c314c9a.png)
 
 # Welcome to TaskManager!
 Hi, and welcome to **TaskManager**! TaskManager is, well, a *simple* task manager to help you stay organized and get things done.
@@ -30,21 +31,22 @@ TaskManager is made up of many wonderful frameworks/packages, including:
 	- and more!
 
 ### Lines of Code
-***Table 1*** shows the lines of code in the root directory, excluding all files within the `node_modules`, `tests`, and `vendor` folders.
+***Table 1*** shows the lines of code in the root directory, excluding all files within the `node_modules`, `tests`, and `vendor` folders. (`cloc --exclude-dir=node_modules,test,vendor .`)
 
 **Language**|**Files**|**Blank**|**Comment**|**Code**
 -----:|:-----:|:-----:|:-----:|:-----:
-*PHP*|70|464|1313|2109
-*Blade*|8|48|3|587
-*Sass*|6|44|13|289
+*PHP*|68|439|1328|1717
+*Blade*|8|49|7|587
+*Sass*|6|44|10|293
 *JSON*|3|0|0|86
-*JavaScript*|7|29|65|40
+*Markdown*|2|28|0|74
+*JavaScript*|7|29|69|40
 *XML*|1|1|0|31
 *Vuejs Component*|1|2|0|21
 *CSS*|1|1|0|2
-**TOTAL:**|**97**|**589**|**1394**|**3165**
+**TOTAL:**|**97**|**593**|**1414**|**2851**
 ---
-***Table 2*** shows the lines of code in the `public` directory.
+***Table 2*** shows the lines of code in the `public` directory. (`cloc public/`)
 
 **Language**|**Files**|**Blank**|**Comment**|**Code**
 -----:|:-----:|:-----:|:-----:|:-----:
