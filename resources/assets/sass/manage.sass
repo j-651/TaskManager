@@ -1,0 +1,40 @@
+$dot-background-color: $info !default
+
+.content
+    h1
+        margin-bottom: 0
+    pre
+        overflow-x: hidden
+        white-space: pre-wrap
+        @each $name, $pair in $colors
+            $color: nth($pair, 1)
+            $color-invert: nth($pair, 2)
+            &.has-background-#{$name}
+                background-color: $color
+                color: $color-invert
+
+.media-content
+    overflow: hidden
+
+.has-dot
+    position: relative
+    .dot
+        background-color: $dot-background-color
+        border-radius: $radius-rounded
+        justify-content: center
+        white-space: nowrap
+        position: absolute
+        top: .5em
+        &:first-child
+            right: .5em
+        &:nth-child(2)
+            right: .5em + 1.5em
+        &:nth-child(3)
+            right: .5em + 1.5em + 1.5em
+        width: 15px
+        height: 15px
+        z-index: 2
+        @each $name, $pair in $colors
+            $color: nth($pair, 1)
+            &.is-#{$name}
+                background-color: $color
