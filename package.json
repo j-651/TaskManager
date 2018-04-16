@@ -1,6 +1,9 @@
 {
     "private": true,
     "scripts": {
+        "setup-taskmanager": "git clone https://github.com/j-651/TaskManager.git && cd TaskManager && yarn install && composer install && copy .env.example .env && php artisan key:generate && php artisan storage:link && yarn run cache",
+        "clear-cache": "php artisan cache:clear && php artisan config:clear && php artisan route:clear && php artisan view:clear && composer dump-autoload",
+        "cache": "php artisan config:cache && php artisan route:cache && php artisan view:cache",
         "dev": "yarn run development",
         "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "watch": "yarn run development -- --watch",

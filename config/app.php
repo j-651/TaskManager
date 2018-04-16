@@ -2,6 +2,8 @@
 
 return [
 
+    'version' => 'v0.1.0',
+
     /*
     |--------------------------------------------------------------------------
     | Application Name
@@ -154,12 +156,12 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
-        'App\Providers\HelperServiceProvider',
+        TaskManager\Providers\AppServiceProvider::class,
+        TaskManager\Providers\AuthServiceProvider::class,
+        // TaskManager\Providers\BroadcastServiceProvider::class,
+        TaskManager\Providers\EventServiceProvider::class,
+        TaskManager\Providers\RouteServiceProvider::class,
+        'TaskManager\Providers\HelperServiceProvider',
 
     ],
 

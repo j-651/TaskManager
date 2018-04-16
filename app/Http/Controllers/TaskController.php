@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace TaskManager\Http\Controllers;
 
 use Illuminate\Http\Request;
-use \App\Task;
+use \TaskManager\Task;
 use Carbon\Carbon;
 use Session;
 

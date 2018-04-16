@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace TaskManager\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
@@ -28,6 +28,7 @@ class AppServiceProvider extends ServiceProvider
             $greeting = 'evening';
         }
         View::share([
+                    'version' => config('app.version', 'unknown version'),
                     'current_time' => $current_time,
                     'greeting' => ucwords('Good ' . $greeting)
                     ]);
