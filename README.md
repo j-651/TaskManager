@@ -4,6 +4,8 @@
      Latest Version: <b>v0.1.0</b>
 </p>
 
+<h2><b><mark>THIS REPOSITORY IS NO LONGER MAINTAINED AND MAY HAVE VULNERABILITIES. USE AT YOUR OWN RISK.</mark></b></h2>
+
 # Welcome to TaskManager!
 Hi, and welcome to **TaskManager** ("TM")! TM is, well, a *simple* task manager to help you stay organized and get things done.
 
